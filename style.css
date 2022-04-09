@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #655d8a, #d49a89);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.interface-1 {
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  border-radius: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  width: auto;
+  margin-inline: 2.5rem;
+  background-color: #f7dad9;
+  border-radius: 25px;
+}
+
+header .barra-pesquisa {
+  /* background-color: red; */
+  width: 100%;
+  margin-top: -30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .barra-pesquisa > input {
+  min-width: 150px;
+  width: 15%;
+  padding: 0.75rem;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+}
+header .barra-pesquisa > input::placeholder {
+  font-size: 12pt;
+  text-indent: 10px;
+}
+
+header nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+header nav > .navbar {
+  display: flex;
+  text-transform: uppercase;
+  /* background-color: #0000ff80; */
+  width: 80%;
+  margin-inline: auto;
+  padding: 0.5rem;
+  justify-content: space-evenly;
+}
+
+header nav .navbar li a {
+  color: rgb(49, 31, 54);
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+
+header nav .navbar li a:hover {
+  color: rgb(49, 31, 54);
+  text-decoration: none;
+  color: rgb(110, 84, 139);
+  transform: all ease 0.5s;
+}
+
+header nav .navbar li a.active {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+#banner .cats {
+  margin-top: 2.5rem;
+  width: 70%;
+  height: 400px;
+  /* border-radius: 0.75rem; */
+  user-select: none;
+}
+
+.container .stars {
+  width: 15%;
+  user-select: none;
+}
+
+#queridinhos {
+  width: auto;
+  height: 100vh;
+}
+
+#queridinhos h2 {
+  text-align: center;
+  /* margin-top: -7em; */
+  margin-bottom: 2.5rem;
+}
+
+#queridinhos .galeria-gatinhos {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#queridinhos .galeria-gatinhos ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-inline: 2.5rem;
+  grid-gap: 25px;
+}
+#queridinhos .galeria-gatinhos ul li {
+  width: 100%;
+  height: 100%;
+}
+
+#queridinhos .galeria-gatinhos ul li img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.final {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 8%;
+}
